@@ -10,29 +10,29 @@ class ServoDrawer extends React.Component {
     };
   }
 
-  getOpen () {
+  getOpen = () => {
     return this.state.open;
   }
 
-  toggle () {
+  toggle = () => {
     this.setState({
-      open: this.state.open
+      open: !this.state.open
     });
   }
 
-  open () {
+  open = () => {
     this.setState({
       open: true
     });
   }
 
-  close () {
+  close  = () => {
     this.setState({
       open: false
     });
   }
 
-  render () {
+  render = () => {
     return (
       <Drawer.TemporaryDrawer open={this.state.open} onClose={this.close}>
         <Drawer.TemporaryDrawerContent>

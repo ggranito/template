@@ -66,7 +66,8 @@ var config = {
     historyApiFallback: {
       index: "public/index.html"
     },
-    port: 9000
+    port: 9000,
+    host: "0.0.0.0"
   },
   resolve: {
     alias: {

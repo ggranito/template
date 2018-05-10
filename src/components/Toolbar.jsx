@@ -4,13 +4,12 @@ import 'preact-material-components/Toolbar/style.css';
 
 class ServoToolbar extends React.Component {
 
-
-  render () {
+  render = () => {
     return (
       <Toolbar className="toolbar">
         <Toolbar.Row>
           <Toolbar.Section align-start={true}>
-            <Toolbar.Icon menu onClick=>menu</Toolbar.Icon>
+            <Toolbar.Icon menu onClick={() => this.props.onMenuClick()}>menu</Toolbar.Icon>
             <Toolbar.Title>
               My App
             </Toolbar.Title>

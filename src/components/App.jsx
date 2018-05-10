@@ -6,11 +6,11 @@ import Drawer from './Drawer.jsx';
 
 class App extends React.Component {
 
-  render () {
+  render = () => {
     return (
       <div className="app-container">
-        <Toolbar onMenuClick={this.refs.drawer.toggle()}/>
-        <Drawer ref="drawer" />
+        <Toolbar onMenuClick={() => this.drawer.toggle()}/>
+        <Drawer ref={(d) => this.drawer = d} />
       </div>
     );
   }
