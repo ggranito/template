@@ -2,7 +2,7 @@ import React from 'preact';
 import Toolbar from 'preact-material-components/Toolbar';
 import 'preact-material-components/Toolbar/style.css';
 
-class ServoToolbar extends React.Component {
+class AppToolbar extends React.Component {
 
   render = () => {
     return (
@@ -23,4 +23,4 @@ class ServoToolbar extends React.Component {
   }
 }
 
-export default ServoToolbar
+export default AppToolbar
